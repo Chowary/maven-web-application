@@ -9,6 +9,7 @@ node
     {
         sh "${mavenHome}/bin/mvn clean package"
     }
+    /*
     stage('test')
     {
         sh "${mavenHome}/bin/mvn sonar:sonar"
@@ -17,10 +18,13 @@ node
     {
         sh "${mavenHome}/bin/mvn deploy"
     }
+    
     stage('tomcat'){
         sshagent(['4d929059-2e7d-4292-9cd4-d840ef25cd0f']) {
             sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@3.109.59.47:/opt/apache-tomcat-10.0.8/webapps/"
     
        }
     }
+    */
+    
 }
