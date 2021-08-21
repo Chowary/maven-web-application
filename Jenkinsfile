@@ -9,6 +9,7 @@ node
     {
         sh "${mavenHome}/bin/mvn clean package"
     }
+    /*
     stage('test')
     {
         sh "${mavenHome}/bin/mvn sonar:sonar"
@@ -23,4 +24,5 @@ node
     
        }
     }
+    */
 }
